@@ -3,7 +3,6 @@ class Book {
     String title;
     String author;
     String isbn;
-
     boolean isBorrowed;
 
     static{
@@ -20,15 +19,15 @@ class Book {
         this.author = author;
     }
 
-    Book(String isbn){
-        this(isbn, "Unknown", "Unknown");
+    Book (String isbn){
+        this("Unknown", "Unknown",isbn);
     }
 
-    public static int getTotalNoOfBooks() {
+    static int getTotalNoOfBooks() {
         return totalNoOfBooks;
     }
 
-    public void  borrowBook(){
+    void  borrowBook(){
         if(isBorrowed){
             System.out.println("Book is already borrowed");
         }else{
@@ -46,7 +45,7 @@ class Book {
 
     }
 
-    public static void main(String[] args) {
+    static void main(String[] args) {
         Book book1 = new Book("ART", "ullu","1" );
         Book book2 = new Book("Maths", "pllu","22" );
         Book book3 = new Book("Computer", "ulou","13" );
