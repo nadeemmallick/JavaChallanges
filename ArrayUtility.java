@@ -2,12 +2,9 @@ import java.util.Scanner;
 
 public class ArrayUtility {
     public  static int[] inputArray(){
-
         Scanner sc = new Scanner(System.in);
         System.out.print("enter the size of the array :");
-
         int size = sc.nextInt();
-
         int[] num = new int[size];
         int i = 0;
         while(i<size){
